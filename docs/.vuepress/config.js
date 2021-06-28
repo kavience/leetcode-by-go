@@ -20,6 +20,7 @@ module.exports = {
             '/easy/two-sum.md',
             '/easy/remove-duplicates-from-sorted-array.md',
             '/easy/remove-element.md',
+            '/easy/search-insert-position.md',
           ],
         },
       ],
