@@ -15,13 +15,21 @@ module.exports = {
       '/easy/': [
         {
           text: '简单',
-          children: ['/easy/README.md', '/easy/two-sum.md'],
+          children: [
+            '/easy/README.md',
+            '/easy/two-sum.md',
+            '/easy/remove-duplicates-from-sorted-array.md',
+            '/easy/remove-element.md',
+          ],
         },
       ],
       '/medium/': [
         {
           text: '中等',
-          children: ['/medium/README.md', '/medium/container-with-most-water.md'],
+          children: [
+            '/medium/README.md',
+            '/medium/container-with-most-water.md',
+          ],
         },
       ],
       '/hard/': [
