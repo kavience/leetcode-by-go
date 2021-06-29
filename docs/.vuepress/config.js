@@ -30,6 +30,7 @@ module.exports = {
           children: [
             '/medium/README.md',
             '/medium/container-with-most-water.md',
+            '/medium/3sum.md',
           ],
         },
       ],
