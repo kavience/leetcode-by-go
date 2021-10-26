@@ -1,12 +1,10 @@
-package main
+package source_code
 
 import (
-	"fmt"
 	"sort"
-	"time"
 )
 
-func threeSum(nums []int) [][]int {
+func ThreeSum(nums []int) [][]int {
 	result := [][]int{}
 	n := len(nums)
 	// 先排序
@@ -42,11 +40,4 @@ func threeSum(nums []int) [][]int {
 		}
 	}
 	return result
-}
-
-func main() {
-	nums := []int{-1, 0, 1, 2, -1, -4}
-	removeDuplicatesStart := time.Now()
-	fmt.Println(threeSum(nums))
-	fmt.Println(time.Since(removeDuplicatesStart))
 }

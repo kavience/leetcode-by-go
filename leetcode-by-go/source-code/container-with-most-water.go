@@ -1,13 +1,11 @@
-package main
+package source_code
 
 import (
-	"fmt"
 	"math"
-	"time"
 )
 
 // 方法一
-func maxArea1(height []int) int {
+func MaxArea1(height []int) int {
 	var result = 0
 	for i := 0; i < len(height); i++ {
 		for j := i + 1; j < len(height); j++ {
@@ -23,7 +21,7 @@ func maxArea1(height []int) int {
 }
 
 // 方法二
-func maxArea2(height []int) int {
+func MaxArea2(height []int) int {
 	var (
 		result = 0
 		i      = 0
@@ -39,15 +37,4 @@ func maxArea2(height []int) int {
 		}
 	}
 	return result
-}
-
-func main() {
-	nums := []int{1, 8, 6, 2, 5, 4, 8, 3, 7}
-	twoSum1Start := time.Now()
-	fmt.Println(maxArea1(nums))
-	fmt.Println(time.Since(twoSum1Start))
-
-	twoSum2Start := time.Now()
-	fmt.Println(maxArea2(nums))
-	fmt.Println(time.Since(twoSum2Start))
 }
